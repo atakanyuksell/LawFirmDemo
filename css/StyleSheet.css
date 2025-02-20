@@ -415,6 +415,7 @@ html, body {
 
 /* Hamburger Menü (Başlangıçta Gizli) */
 .menu-icon {
+  visibility: hidden;
   font-size: 30px;
   cursor: pointer;
   color: white;
@@ -491,6 +492,7 @@ html, body {
 @media screen and (max-width: 825px) {
   .menu-icon {
     display: block; /* Telefon ekranlarında görünür */
+    visibility: visible;
   }
 
   .navbar {
@@ -527,6 +529,10 @@ html, body {
 
 /* Küçük ekranlar için (768px ve altı) */
 @media (max-width: 768px) {
+  .content-hp {
+    padding: 0 0 20vh 0; /* Daha az padding */
+  }
+
   .content-hp h1 {
     font-size: 2rem; /* Daha küçük yazı */
   }
